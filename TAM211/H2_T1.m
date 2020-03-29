@@ -1,0 +1,9 @@
+F1_mag = 5;
+F2_mag = 20;
+alpha = 70;
+beta = 61;
+F1 = [F1_mag*cosd(alpha),F1_mag*sind(alpha)];
+F2 = [F2_mag*(-sind(beta)),F2_mag*(-cosd(beta))];
+F3 = F1 + F2;
+a1 = normest(F3)
+a2 = atan(F3(2)/F3(1))/pi*180

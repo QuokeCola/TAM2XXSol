@@ -1,0 +1,12 @@
+theta1 = 32;
+theta2 = 50;
+W = 35;
+TOT = [0;W*9.81];
+Vab = [cosd(90+theta1);sind(90+theta1)];
+Vac = [cosd(90-theta2);sind(90-theta2)];
+Matrix = [Vab,Vac];
+ans = inv(Matrix) * (-TOT);
+Tab = ans(1) * Vab;
+Tac = ans(2) * Vac;
+Mag_Tab = normest(Tab)
+Mag_Tac = normest(Tac)

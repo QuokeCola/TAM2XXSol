@@ -1,0 +1,12 @@
+x_S = 17  
+y_S = 134  
+x_E = 50 
+y_E = 134 
+x_W = 50 
+y_W = 103
+m = 3 
+S = [x_S;y_S;0];
+E = [x_E;y_E;0];
+W = [x_W;y_W;0];
+M = [0;-m*9.81;0];
+moment = cross(W-S,M)
