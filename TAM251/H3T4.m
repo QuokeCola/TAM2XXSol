@@ -1,7 +1,8 @@
-L = 2803; % mm
-Ac = 3498; % mm^2
-E = 192; % GPa
-P = 456; % kN
-theta = 59; % degrees
+L = 2142; % mm
+Ac = 3817; % mm^2
+E = 218; % GPa
+P = 530; % kN
+theta = 45; % degrees
 
-(-P*tand(90-theta)/2-P/2)/Ac/E*L
+%point to left
+vpa((P*tand(90-theta)/2+P/2)/Ac/E*L)
