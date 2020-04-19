@@ -1,11 +1,11 @@
-a = 339; 
-b = 226;
-c = 279;
-Pz = 334; 
-Py = 364; 
-p = 742;
-do = 88;
-di = 68;
+a = 327; 
+b = 216;
+c = 258;
+Pz = 324; 
+Py = 304; 
+p = 556;
+do = 99;
+di = 79;
 
 absVy = Py;
 absVz = Pz;
@@ -21,7 +21,6 @@ Iz = vpa(int(int(y^2,x,-sqrt((do/2)^2-y^2),sqrt((do/2)^2-y^2)),y,-do/2,do/2)-int
 J = vpa(int(int(x^2+y^2,x,-sqrt((do/2)^2-y^2),sqrt((do/2)^2-y^2)),y,-do/2,do/2)-int(int(x^2+y^2,x,-sqrt((di/2)^2-y^2),sqrt((di/2)^2-y^2)),y,-di/2,di/2));
 Q = vpa(int(int(y,x,-sqrt((do/2)^2-y^2),sqrt((do/2)^2-y^2)),y,0,do/2)-int(int(y,x,-sqrt((di/2)^2-y^2),sqrt((di/2)^2-y^2)),y,0,di/2));
 
-SigmaX = My*do/2/Iz*1e3+p*pi*(di/2)^2*1e3/(pi/4*(do^2-di^2))/1e6
-
+SigmaX = My*do/2/Iz*1e3+p*(di/2)/((do-di)/2)/2/1000
 SigmaY = p*di/2/(do-di)*2/1e3
 TauXY = -vpa(Tx*do/2/J*1e3+absVy*Q/Iz/(do-di))
