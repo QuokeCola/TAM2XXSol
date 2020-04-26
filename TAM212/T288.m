@@ -1,14 +1,14 @@
 %copy this from website
-x0 = -13
-y0 = 13
+x0 = 9
+y0 = 12
 end_time = 2
 
 syms t
 %enter v here
-v = [2,1];
+v(t) = 3*sin(-2*t)
 
 %there are three types.
-command = 'v';
+command = 'er';
 
 L_old = normest([x0,y0]);
 switch command

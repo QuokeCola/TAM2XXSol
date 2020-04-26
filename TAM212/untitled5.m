@@ -1,0 +1,9 @@
+theta = -4;
+omega = 1;
+alpha = -3;
+r=4-2*sin(-4*theta+3);
+r1=8*cos(-4*theta+3)*omega;
+r2=-32*sin(-4*theta+3)*omega^2-6*cos(3*theta+4)*alpha;
+er=[cos(theta) sin(theta)];
+eo=[-sin(theta) cos(theta)];
+a=(r2-r*omega^2)*er+(r*alpha+2*r1*omega)*eo

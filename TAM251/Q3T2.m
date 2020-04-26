@@ -1,12 +1,18 @@
-do = 99; % mm
-di = 80; % mm
-h = 361; % mm
-P = 171; % kN
-delta = 0.14; % mm
+a = 620; % mm
+b = 390; % mm
+d1 = 55; % mm
+d2 = 82; % mm
+t = 380; % mm
+F = 2.4; % kN
+G = 85; % GPa
 
-A = pi*(do^2-di^2)/4*1e-6;
-tau = P*1e3/A/1e6
+T = F*t
 
-strain = delta/h;
-strain*1e3
-E = tau*1e6/strain/1e9
+J1 = pi/32*(d1^4)
+J2 = pi/32*(d2^4)
+k1 = G*J1/a
+k2 = G*J2/b
+
+fi = T/(k1+k2)
+T2 = fi*k2
+taumax = T2*d2/2/J2 *1e-3*1e12/1e6

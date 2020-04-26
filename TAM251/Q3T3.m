@@ -1,5 +1,11 @@
-k1 = 10e5
-k2 = 8e5
-P = 50
+L = 1584; % mm
+di = 24; % mm
+do = 36; % mm
+G = 59; % GPa
+tau = 42; % MPa
+FS = 2;
 
-(P/(2*k2)+P/k1)*1e3
+syms T
+J = pi/32*(do^4-di^4)
+eq1 = T*do/2/J*1e3==tau/FS
+T = solve(eq1,T)
