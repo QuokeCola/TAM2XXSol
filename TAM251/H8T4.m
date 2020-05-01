@@ -6,12 +6,10 @@ s2 = 182; % psi
 
 syms y b
 Iz = int(y^2*b,y,-3/2*h,3/2*h);
-Q = h*b*h;
-tau = P*Q/(Iz*b);
-b1 = vpa(solve(tau==s2/1000,b))
-M = P*a;
-b2 = vpa(solve(s1==M*3/2*h/Iz,b))
+Q1 = h*b*h;
+tau1 = P*Q1/(Iz*b);
+b1 = vpa(solve(tau1==s2/1000,b))
+Q2 = 9/8*h^2*b;
+tau2 = P*Q2/(Iz*b);
+b2 = vpa(solve(tau2==s1/1000,b))
 max(b1,b2)
-
-
-
