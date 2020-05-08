@@ -1,8 +1,8 @@
-h = 1; % in
-a = 31; % in
+h = 3; % in
+a = 30; % in
 P = 3; % kips
-s1 = 302; % psi
-s2 = 182; % psi
+s1 = 441; % psi
+s2 = 293; % psi
 
 syms y b
 Iz = int(y^2*b,y,-3/2*h,3/2*h);

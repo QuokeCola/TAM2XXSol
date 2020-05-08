@@ -1,8 +1,8 @@
-b = 36; % in
-t = 13; % in
-d = 0.50; % in
-deltaS = 46; % in
-Vmax = 3; % lb
+b = 38; % in
+t = 15; % in
+d = 0.60; % in
+deltaS = 64; % in
+Vmax = 5; % lb
 
 syms y
 Iz = int(y^2*t,y,-b/2,b/2)+2*int(y^2*b,y,b/2,b/2+t);

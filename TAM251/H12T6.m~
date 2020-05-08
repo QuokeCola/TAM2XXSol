@@ -1,7 +1,0 @@
-M = 63; % kN.m
-L = 1591; % mm
-del = 3; % mm
-E = 140; % GPa
-Iz = 147175052; % mm^4
-
-eq1 = -M*L^2/E/Iz-M*L/E/Iz*L+P*(2*L)^3/3/E/Iz==del/1e3
