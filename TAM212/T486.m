@@ -1,12 +1,12 @@
-rOP = [1,3]
-rPQ = [1,2]
-omega1 = -1
-omega2 = -2
-alpha1 = 1
-alpha2 = 2
+rOP = [1,1,0];
+rPQ = [-2,1,0];
+omega1 = 3;
+omega2 = 1;
+alpha1 = 1;
+alpha2 = 2;
 
-rOP = [rOP,zeros(1,1)]
-rPQ = [rPQ,zeros(1,1)]
+rOP = [rOP]
+rPQ = [rPQ]
 
 alpha1 = [zeros(1,2),alpha1]
 alpha2 = [zeros(1,2),alpha2]

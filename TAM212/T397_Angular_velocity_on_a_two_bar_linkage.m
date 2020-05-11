@@ -1,10 +1,10 @@
-rOP = [0,2]
-rPQ = [-2,2]
-vQ = [0,4]
+rOP = [0,1,0];
+rPQ = [1,2,0];
+vQ = [0,1,0];
 
-rOP = [rOP,0]
-rPQ = [rPQ,0]
-vQ = [vQ,0]
+rOP = [rOP]
+rPQ = [rPQ]
+vQ = [vQ]
 
 syms omega1
 syms omega2
