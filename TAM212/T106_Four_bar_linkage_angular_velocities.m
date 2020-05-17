@@ -1,11 +1,11 @@
 clear all
 clc
 
-rAB = [2,0,0];
+rAB = [1,0,0];
 rAD = [-1,1,0];
-rBC = [0,2,0];
+rBC = [1,2,0];
 rDC = [3,1,0];
-omega2 = 1;
+omega1 = -3;
 
 if(exist('omega1')==1)
     syms omega2 omega3

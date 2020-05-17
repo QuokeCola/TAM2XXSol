@@ -1,5 +1,5 @@
-rPQ = [-3,-2,0];
-vP = [-2,-3,0];
+rPQ = [3,2,0];
+vP = [-2,0,0];
 
 theta = 45 % degree, the angle of orbit. ccw for +
 

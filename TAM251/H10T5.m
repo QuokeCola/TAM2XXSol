@@ -1,8 +1,8 @@
-p = 1363; % kPa
-T = 2; % kN.m
-t = 11; % mm
-r = 187; % mm
-sigmaY = 220; % MPa
+p = 1278; % kPa
+T = 3; % kN.m
+t = 18; % mm
+r = 324; % mm
+sigmaY = 222; % MPa
 
 sx = p*r/(((r+t)-r))/2/1e3
 sy = p*r/t/1000
@@ -14,6 +14,8 @@ sigmanew2 = (sx+sy)/2-sqrt((sx-sy)^2/4+txy^2)
 thetap1 = atand((sigmanew1-sx)/txy)
 
 taumax = (sigmanew1-sigmanew2)/2
+
+
 
 if (sigmanew1>sigmanew2)
     k = sigmanew1/sigmanew2;

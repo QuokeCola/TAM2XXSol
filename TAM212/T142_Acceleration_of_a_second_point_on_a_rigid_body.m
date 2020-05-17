@@ -1,7 +1,4 @@
-omega = -2;
-alpha = -1;
-rPQ = [-4,-4,0];
-aP = [0,-1,0];
+omega = 0; alpha = -1; rPQ = [-1,-3,0]; aP = [-1,-2,0];
 
 a1 = omega^2*(-rPQ)
 angular = cross([rPQ(1),rPQ(2),0],[0,0,-alpha])
