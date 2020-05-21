@@ -1,9 +1,8 @@
 clear all
-clc
 
-omega = [0, 0, 2];
-aQ = [3,-8, 0];
-theta = 0 % for position of Q, degree, ccw +
+alpha = [0, 0, -7];
+aQ = [10,2, 0];
+theta = 180 % for position of Q, degree, ccw +
 
 if(exist('alpha')==1)
     a = 1

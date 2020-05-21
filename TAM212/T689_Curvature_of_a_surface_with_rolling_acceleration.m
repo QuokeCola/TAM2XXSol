@@ -1,6 +1,6 @@
 r = 2;
-aQMag = 13;
-omega = -2; %ccw +
+aQMag = 23;
+omega = -3; %ccw +
 alpha = -2; %ccw +
 theta = 180; %for position of Q, degree, ccw +
 

@@ -1,9 +1,9 @@
-rho = 35;
-omega = -5;
-alpha = -4;
-r = [-5,-2,0];
+rho = 40;
+omega = -2;
+alpha = -6;
+r = [6,6,0];
 
-theta = 180 % for position of C, degree, ccw +
+theta = 0 % for position of C, degree, ccw +
 problem = 1 % -1 for inner, 1 for outer
 
 r = r';
