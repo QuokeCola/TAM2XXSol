@@ -1,10 +1,10 @@
 clear all
 clc
 
-omega = -5;
-vQ = [5, 0, 0];
+r = 9;
+vQ = [-8, 8, 0];
 
-theta = 90 % for position of Q, degree, ccw +
+theta = 0 % for position of Q, degree, ccw +
 
 if(exist('r')==1)
     syms omega;

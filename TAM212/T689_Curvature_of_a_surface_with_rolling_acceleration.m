@@ -1,8 +1,8 @@
 r = 2;
-aQMag = 23;
-omega = -3; %ccw +
+aQMag = 11;
+omega = 2; %ccw +
 alpha = -2; %ccw +
-theta = 180; %for position of Q, degree, ccw +
+theta = -90; %for position of Q, degree, ccw +
 
 
 syms row;

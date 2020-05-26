@@ -1,0 +1,16 @@
+m = 6;
+r = 5;
+g = 9.8;
+h = 22;
+vcf = 31;
+
+if(exist('vcf')==0)
+    syms vcf
+elseif(exist('vc0')==0)
+    syms vc0
+end
+w0 = vc0/r;
+wf = vcf/r;
+I = 1/2*m*r^2;
+
+eqn = 0.5*I*w0^2+m*g*(h-r)==0.5*I*wf^2

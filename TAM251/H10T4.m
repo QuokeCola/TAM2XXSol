@@ -1,8 +1,8 @@
-p = 1363; % kPa
-F = 13; % kN
-t = 9; % mm
-r = 153; % mm
-sigmaY = 226; % MPa
+p = 1204; % kPa
+F = 15; % kN
+t = 8; % mm
+r = 120; % mm
+sigmaY = 165; % MPa
 
 sx = F/(pi*(r+t)^2-pi*r^2)*1e3 + p*r/(((r+t)-r))/2/1e3
 sy = p*r/t/1000
